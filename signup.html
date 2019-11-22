@@ -240,7 +240,7 @@ input {
 <div class="container" id="container">
 
 <div class="form-container sign-in-container">
-	<form method="POST" action="/signup">
+	<form method="POST" action="home2.html">
 		<h1>Sign Up</h1>
 		<div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -268,7 +268,7 @@ input {
 			<h1>Hey, User!</h1>
 			<p>Already, have an account ?</p>
             
-            <a href="/login"><button class="ghost" >Login</button></a>
+            <a href="login.html"><button class="ghost" >Login</button></a>
 		</div>
 	</div>
 </div>
@@ -278,7 +278,6 @@ input {
 	const signUpButton = document.getElementById('signUp');
 	const signInButton = document.getElementById('signIn');
 	const container = document.getElementById('container');
-
 	signUpButton.addEventListener('click', () => {
 		container.classList.add("right-panel-active");
 	});

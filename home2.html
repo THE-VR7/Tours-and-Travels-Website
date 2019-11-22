@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="style.css" rel="stylesheet"> -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Travelex</title>
+
     <script>
         var i = 0
         var img1 = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://wallpaperaccess.com/full/355030.jpg')"
@@ -44,9 +47,9 @@
             margin: 0;
         }
         html {
-            scroll-behavior: smooth;
-
-        }
+  scroll-behavior: smooth;
+  
+}
         .header {
             height: 750px;
             background-size: cover;
@@ -56,6 +59,8 @@
             text-align: center;
             color: white;
         }
+
+       
         .login-btn {
             width: 100px;
             padding: 8px 0;
@@ -66,6 +71,7 @@
             color: white;
             float: right;
         }
+
         .one {
             padding: 340px 0 0 0;
         }
@@ -188,6 +194,11 @@
             background: transparent;
             color: white;
             margin-top: 20px;
+            
+        }
+        .book-btn:hover{
+            transition: 1s;
+            transform: scale(1.2);
         }
 
         .users-feedback {
@@ -258,10 +269,7 @@
                 margin-bottom: -40px;
             }
         }
-        .book-btn:hover{
-            transition: 1s;
-            transform: scale(1.2);
-        }
+
         .aboutus {
             padding: 100px;
             height: 500px;
@@ -367,12 +375,19 @@
                 margin-top: 5px;
                 margin-left: -15px;
                 color: white;
+              
+                
+                
+                
+
         }
+
         .navbar-collapse ul li:hover .prosection ul{
            display: block;
            position: absolute;
           
         }
+
         .navbar-collapse ul li:hover .prosection ul li{
             width: 100px;
                 padding:4px;
@@ -381,6 +396,7 @@
                 border-radius:20px;
 
         }
+
         .navbar-collapse ul li:hover .prosection ul li:last-child{
            border-bottom: none;
                 
@@ -393,62 +409,78 @@
         {
               color: turquoise;
         }
+        
     </style>
 </head>
+
 <body>
-        <header class="top-navbar">
-                <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
-                   <div class="container">
-                       <!-- <a class="navbar-brand" href=""><img src></a> -->
-                       <img style="width: 190px; height: 35px;"
-                           src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
-                           alt="travelex">
-                       <button class="navbar-toggler" type="button" data-toggle="collapse"
-                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
-                       </button>
-                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                           <ul class="navbar-nav ml-auto">
-                               <li class="nav-item ">
-                                   <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                                    Home </a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>
-                                    About Us</a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link" href="login.html"><i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                                    Login</a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link profile" href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i>
-                                    Signup </a> 
-                               </li>
-                           </ul>
-                       </div>
-                   </div>
-               </nav>
-           </header>
+    <header class="top-navbar">
+         <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+            <div class="container">
+                <!-- <a class="navbar-brand" href=""><img src></a> -->
+                <img style="width: 190px; height: 35px;"
+                    src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
+                    alt="travelex">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tourpackages.html"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                Tours Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link profile" href="">&nbsp &nbsp<i class="fa fa-user" aria-hidden="true"></i> </a>
+                             <div class="prosection">
+                                   <ul class="npf" style="list-style: none; ">
+                                       <li   style="font-size:20px ;"><a href="/profile" style="text-decoration: none; color: white;"><i class="fa fa-id-badge" aria-hidden="true"></i>Profile</a>
+                                   </li>
+                                       <li  style="font-size:20px ; "> <a  href="/" style="text-decoration: none; color: white;"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+                                              
+                                   </ul>
+                             </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
     <div class="imdrender" style="display: none;">
-        <img src="https://wallpaperaccess.com/full/355030.jpg" alt="">
-        <img src="https://wallpaperplay.com/walls/full/1/1/3/272847.jpg" alt="">
-        <img src="https://i.pinimg.com/originals/a3/68/0a/a3680a12cf21dfb1c389dc6a7beaf90c.jpg" alt="">
-        <img src="https://assets3.thrillist.com/v1/image/2420645/size/tmg-gift_guide_default_2x.jpg" alt="">
-        <img src="https://i.pinimg.com/originals/8f/cf/a2/8fcfa28d2ec30597f8bf5d36f77b8167.jpg" alt="">
-        <img src="https://vistapointe.net/images/amsterdam-4.jpg" alt="">
-    </div>
+            <img src="https://wallpaperaccess.com/full/355030.jpg" alt="">
+            <img src="https://wallpaperplay.com/walls/full/1/1/3/272847.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/a3/68/0a/a3680a12cf21dfb1c389dc6a7beaf90c.jpg" alt="">
+            <img src="https://assets3.thrillist.com/v1/image/2420645/size/tmg-gift_guide_default_2x.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/8f/cf/a2/8fcfa28d2ec30597f8bf5d36f77b8167.jpg" alt="">
+            <img src="https://vistapointe.net/images/amsterdam-4.jpg" alt="">
+        </div>
+
+
     <section class="header hdd1" id="head1"
         style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://vistapointe.net/images/amsterdam-4.jpg')">
+        
         <div class="one">
-            <h1 class="txt1" style=" zoom: 200%;font-size: 55px;font-weight: 700;font-family: sans-serif;">Travel Across
-                the World</h1>
+            <h1 class="txt1" style=" zoom: 200%;font-size: 55px;font-weight: 700;font-family: sans-serif;">Welcome, <%= user.name %> 
+               </h1>
             <p class="txt2" style="zoom: 200%;font-weight: 700;font-family: sans-serif;">Enjoy your vactions like never
                 before</p>
         </div>
         <br>
+       
     </section>
+
     <section class="features">
         <h1 style="text-align: center; padding-bottom: 30px; font-family: sans-serif;font-weight: 700;">Featured
             Destinations</h1>
@@ -460,7 +492,7 @@
                             <img
                                 src="https://static01.nyt.com/images/2017/01/18/world/australia-newsletter/australia-newsletter-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
                         </div>
-                     <a href="login.html" style="text-decoration: none;">   <span class="price">1,00,000 INR</span> &nbsp
+                     <a href="/sydney" style="text-decoration: none;"> <span class="price">1,00,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -479,7 +511,7 @@
 
                             </p>
                         </div>
-                    </a>
+                    </a>  
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -488,7 +520,7 @@
                             <img
                                 src="https://cdn-04.independent.ie/life/travel/article34651285.ece/4f0c0/AUTOCROP/w620/zurich.jpg">
                         </div>
-                        <a href="login.html" style="text-decoration: none;">   <span class="price">1,50,000 INR</span> &nbsp
+                        <a href="/zurich" style="text-decoration: none;"><span class="price">1,50,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -518,12 +550,15 @@
                             <img
                                 src="https://www.gannett-cdn.com/media/2018/12/15/USATODAY/usatsports/MotleyFool-TMOT-657f0436-21e9af86.jpg">
                         </div>
-                        <a href="login.html" style="text-decoration: none;">  <span class="price">2,50,000 INR</span> &nbsp
+                        <a href="/newyork" style="text-decoration: none;">  <span class="price">2,50,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
+
+
+
                         </span>
                         <div class="placename">
                             <h3>New York</h3>
@@ -536,7 +571,7 @@
                                 financial and cultural centers.
                             </p>
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
 
@@ -549,13 +584,13 @@
                             <img
                                 src="https://www.cleartrip.com/collections/wp-content/uploads/2018/04/palolem-beach.jpg">
                         </div>
-                        <a href="login.html" style="text-decoration: none;"> <span class="price">8,000 INR</span> &nbsp
+                        <a href="/goa" style="text-decoration: none;"> <span class="price">8,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
-
+                            
 
                         </span>
                         <div class="placename">
@@ -564,12 +599,12 @@
                         <div class="summary">
                             <p>
                                 Goa is a state in western India with coastlines stretching along the Arabian Sea. Its
-                                long history as a Portuguese colony prior to 1961.Goa is also known for its beaches
-
+                                long history as a Portuguese colony prior to 1961.Goa is also known for its beaches 
+                                
 
                             </p>
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -578,55 +613,62 @@
                             <img style="height: 235px;"
                                 src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/10/20/Pictures/himachal-hindustan-umbrella-september-shelter-saturday-september_d4fc0cb2-d456-11e8-841e-211dfd3178e1.jpg">
                         </div>
-                        <a href="login.html" style="text-decoration: none;"><span class="price">9,000 INR</span> &nbsp
+                        <a href="/shimla" style="text-decoration: none;"> <span class="price">9,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
+                        
+
+
                         </span>
                         <div class="placename">
                             <h3>Shimla</h3>
                         </div>
                         <div class="summary">
                             <p>
-                                Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan
-                                foothills.
-                                Once the summer capital of British India.
+                                Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills.
+                                 Once the summer capital of British India.
                             </p>
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
                         <div class="feature-img">
-                            <img src="https://cdn1.goibibo.com/t_tg_fs/nilgiris-ooty-149342248226-orijgp.jpg"
-                                style="height: 235px;">
+                            <img
+                                src="https://cdn1.goibibo.com/t_tg_fs/nilgiris-ooty-149342248226-orijgp.jpg" style="height: 235px;">
                         </div>
-                        <a href="login.html" style="text-decoration: none;">  <span class="price">12,000 INR</span> &nbsp
+                        <a href="/ooty" style="text-decoration: none;"> <span class="price">12,000 INR</span> &nbsp
                         <span class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
+
+
+
                         </span>
                         <div class="placename">
                             <h3>Ooty</h3>
                         </div>
                         <div class="summary">
                             <p>
-                                Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in
-                                southern India's Tamil Nadu state.
-                                Founded as a British Raj summer resort.
+                                Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in southern India's Tamil Nadu state.
+                                 Founded as a British Raj summer resort.
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+
     <section id="banner" class="banner">
         <div class="banner-highlights">
             <div class="container">
@@ -636,13 +678,16 @@
                         <p>Enjoy your vacations at low cost</p>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="book-btn"><a style="color: white; text-decoration: none;"
-                                href="login.html">Book now</a></button>
+                        <a href="/tourpackages">
+                        <button class="book-btn">Book now</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
+
     <section class="users-feedback">
         <h1 style="text-align: center;font-family: sans-serif;font-weight: 700;">Costumers Reviews</h1>
         <div class="container">
@@ -658,6 +703,7 @@
                     <img
                         src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                 </div>
+
                 <div class="col-md-4">
                     <div class="users-review">
                         <p>Definately, a great place to choose your vacation destination, with
@@ -668,6 +714,7 @@
                     </div>
                     <img src="https://i.pinimg.com/originals/62/03/8e/62038ed2eee55edc230ba7604ed24b41.jpg">
                 </div>
+
                 <div class="col-md-4">
                     <div class="users-review">
                         <p>Definately, a great place to choose your vacation destination, with
@@ -679,10 +726,16 @@
                     <img
                         src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
     <section id="aboutus" class="aboutus">
+
+
         <div class="info">
             <img style="width: 190px; "
                 src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png">
@@ -690,32 +743,44 @@
             <br>
             <div style="color:grey; font-family:Verdana, Geneva, Tahoma, sans-serif; line-height: 10px;">
                 <p>Travelex,
+
                 </p>
                 <p> GLA University</p>
                 <p>Mathura, UP</p>
                 <p>Uttar Pradesh 281001</p>
             </div>
             <br>
+
+
             <p class="social" style="color: grey; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">
                 Follow Us &nbsp
                 <a href="#" style="color: white;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 &nbsp <a href="#" style="color: white;"><i class="fa fa-instagram" aria-hidden="true"></i></a> &nbsp <a
                     style="color: white;" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+
             </p>
+
         </div>
+
         <div class="uselik">
             <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Useful Links</p>
 
             <ul style="list-style: none;">
-                    <li><a  style="text-decoration: none;" href="last.html/#FAQ">FAQ</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#FAQ">FAQ</a></li>
                 
-                    <li><a  style="text-decoration: none;" href="last.html/#TAC">Terms and Condition</a></li>
-                    <li><a style="text-decoration: none;" href="last.html/#PP">Privacy Policy</a></li>
-                    <li><a  style="text-decoration: none;" href="last.html/#TOU">Terms of Use</a></li>
-                    <li><a  style="text-decoration: none;" href="last.html/#RP">Refund Policy</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#TAC">Terms and Condition</a></li>
+                    <li><a style="text-decoration: none;" href="/last/#PP">Privacy Policy</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#TOU">Terms of Use</a></li>
+                    <li><a  style="text-decoration: none;" href="/last/#RP">Refund Policy</a></li>
             </ul>
+
         </div>
+
+
+
         <div class="gtch">
+
             <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Get in touch</p>
             <p style="color: grey; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;"><i
                     class="fa fa-mobile" aria-hidden="true"></i>&nbsp +91 9166621138 | 9997140952</p>
@@ -728,11 +793,15 @@
             <p style="color: grey; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;"><i
                     class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp shikha.saini_cs17@gla.ac.in
             </p>
+
         </div>
+
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
