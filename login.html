@@ -236,13 +236,11 @@ input {
     </style>
 </head>
 <body style="background-image: url('https://wallpapershome.com/images/pages/pic_h/5312.jpg');">
-
 <div class="container" id="container">
 <div class="form-container sign-up-container">
-
 </div>
 <div class="form-container sign-in-container">
-	<form method="POST" action="home2.html">
+	<form method="POST" action="home2.html" onsubmit="return validate()">
 		<h1>Log In</h1>
 		<div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -250,9 +248,9 @@ input {
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
 	</div>
 	<span>or use your account</span>
-	<input type="text" name="username" placeholder="username">
-	<input type="password" name="password" placeholder="Password">
-	<button>Log In</button>
+	<input type="text" name="username" id="tuname" placeholder="username">
+	<input type="password" name="password" id="tpass" placeholder="Password">
+    <button type="submit">Log In</button>
     </form>
 </div>
 <div class="overlay-container">
@@ -265,14 +263,38 @@ input {
 		<div class="overlay-panel overlay-right">
 			<h1>Hey, User!</h1>
 			<p>Don't, have an account ?</p>
-         
-            <a href="signup.html">   <button class="ghost">Sign Up</button></a>
-           
+            <a href="signup.html"><button class="ghost">Sign Up</button></a>
 		</div>
 	</div>
 </div>
 </div>
-
+<script>
+    function validate() {
+        let user = document.getElementById("tuname");
+        let pass = document.getElementById("tpass");
+        if (user.value.trim() == "") {
+            alert("Invalid Username");
+            return false;
+        }
+        else if (pass.value.trim() == "") {
+            alert("Invalid Password")
+            return false;
+        }
+        else if (pass.value.trim() == "" || user.value.trim() == "") {
+            alert("Invalid Username & Password")
+            return false;
+        }
+        else if (pass.value.trim().length < 5) {
+            alert("Password length less than 5");
+            return false;
+        }
+        else {
+            var fmov = user.value;
+            sessionStorage.setItem("fmov",fmov);
+            return true;
+        }
+    }
+</script>
 <script type="text/javascript">
 	const signUpButton = document.getElementById('signUp');
 	const signInButton = document.getElementById('signIn');

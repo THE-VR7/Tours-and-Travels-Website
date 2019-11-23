@@ -9,7 +9,6 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Travelex</title>
-
     <script>
         var i = 0
         var img1 = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://wallpaperaccess.com/full/355030.jpg')"
@@ -375,11 +374,6 @@
                 margin-top: 5px;
                 margin-left: -15px;
                 color: white;
-              
-                
-                
-                
-
         }
 
         .navbar-collapse ul li:hover .prosection ul{
@@ -409,8 +403,31 @@
         {
               color: turquoise;
         }
-        
     </style>
+    <script>
+            onload = f2;
+            function f2(){
+                var fmov1 = sessionStorage.getItem("fmov1");
+                var fmov = sessionStorage.getItem("fmov");
+                console.log(fmov);
+                console.log(fmov1);
+                if(fmov != null )
+                {
+                document.getElementById("name11").innerHTML = fmov;
+                }
+                else if(fmov1 != null) {
+                    document.getElementById("name11").innerHTML = fmov1;    
+                }
+                else
+                {
+                    document.getElementById("name11").innerHTML = "no value";    
+                }
+            }
+            function removevar() {
+                sessionStorage.removeItem("fmov1");
+                sessionStorage.removeItem("fmov");
+            }
+    </script>
 </head>
 
 <body>
@@ -443,10 +460,7 @@
                             <a class="nav-link profile" href="">&nbsp &nbsp<i class="fa fa-user" aria-hidden="true"></i> </a>
                              <div class="prosection">
                                    <ul class="npf" style="list-style: none; ">
-                                       <li   style="font-size:20px ;"><a href="profile.html" style="text-decoration: none; color: white;"><i class="fa fa-id-badge" aria-hidden="true"></i>Profile</a>
-                                   </li>
-                                       <li  style="font-size:20px ; "> <a  href="home.html" style="text-decoration: none; color: white;"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
-                                              
+                                       <li  style="font-size:20px ; "> <a  href="home.html" style="text-decoration: none; color: white;" onclick="removevar()"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>  
                                    </ul>
                              </div>
                         </li>
@@ -467,13 +481,11 @@
         style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://vistapointe.net/images/amsterdam-4.jpg')">
         
         <div class="one">
-            <h1 class="txt1" style=" zoom: 200%;font-size: 55px;font-weight: 700;font-family: sans-serif;">Welcome, <%= user.name %> 
-               </h1>
+            <h1 class="txt1" style=" zoom: 200%;font-size: 55px;font-weight: 700;font-family: sans-serif;">Welcome,<span id="name11"></span> </h1>
             <p class="txt2" style="zoom: 200%;font-weight: 700;font-family: sans-serif;">Enjoy your vactions like never
                 before</p>
         </div>
         <br>
-       
     </section>
 
     <section class="features">

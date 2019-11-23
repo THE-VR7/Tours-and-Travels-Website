@@ -240,7 +240,7 @@ input {
 <div class="container" id="container">
 
 <div class="form-container sign-in-container">
-	<form method="POST" action="home2.html">
+	<form method="POST" action="home2.html" onsubmit="return validate1()">
 		<h1>Sign Up</h1>
 		<div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -248,10 +248,10 @@ input {
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
 	</div>
     <span>or use your account</span>
-    <input type="text" name="name" placeholder="Name">
-    <input type="text" name="username" placeholder="Username">
-	<input type="email" name="email" placeholder="Email">
-	<input type="password" name="password" placeholder="Password">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" id="tuname1" name="username" placeholder="Username" required>
+	<input type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required>
 <br>
 <br>
 	<button type="submit">Sign Up</button>
@@ -267,14 +267,30 @@ input {
 		<div class="overlay-panel overlay-right">
 			<h1>Hey, User!</h1>
 			<p>Already, have an account ?</p>
-            
             <a href="login.html"><button class="ghost" >Login</button></a>
 		</div>
 	</div>
 </div>
 </div>
-
+<script>
+        function validate1() 
+        { 
+        let user = document.getElementById("tuname1");
+        
+        if (user.value.trim() == "") {
+            alert("Invalid Username");
+            return false;
+        }
+        else {
+            var fmov = user.value;
+            sessionStorage.setItem("fmov1",fmov);
+            return true;
+        }
+        }
+</script>
 <script type="text/javascript">
+
+
 	const signUpButton = document.getElementById('signUp');
 	const signInButton = document.getElementById('signIn');
 	const container = document.getElementById('container');
