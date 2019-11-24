@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://the-vr7.github.io/Hello-World/animations.css">
     <title>Travelex</title>
     <script>
         var i = 0
@@ -43,10 +45,12 @@
             padding: 0;
             margin: 0;
         }
+
         html {
             scroll-behavior: smooth;
 
         }
+
         .header {
             height: 750px;
             background-size: cover;
@@ -56,6 +60,7 @@
             text-align: center;
             color: white;
         }
+
         .login-btn {
             width: 100px;
             padding: 8px 0;
@@ -66,6 +71,7 @@
             color: white;
             float: right;
         }
+
         .one {
             padding: 340px 0 0 0;
         }
@@ -258,10 +264,12 @@
                 margin-bottom: -40px;
             }
         }
-        .book-btn:hover{
+
+        .book-btn:hover {
             transition: 1s;
             transform: scale(1.2);
         }
+
         .aboutus {
             padding: 100px;
             height: 500px;
@@ -325,10 +333,12 @@
             color: turquoise;
             transition: 1s;
         }
+
         .navbar-light .navbar-nav .prosection ul li a:hover {
             color: turquoise;
             transition: 1s;
         }
+
         .navbar-nav {
             text-align: center;
         }
@@ -353,84 +363,92 @@
                 background: #fff;
             }
         }
-      
-
-        .prosection{
+        .prosection {
             display: none;
-         
         }
-       
-        .navbar-collapse ul li:hover .prosection{
+
+        .navbar-collapse ul li:hover .prosection {
             display: block;
-                background-color:transparent;
-                position:sticky;
-                margin-top: 5px;
-                margin-left: -15px;
-                color: white;
+            background-color: transparent;
+            position: sticky;
+            margin-top: 5px;
+            margin-left: -15px;
+            color: white;
         }
-        .navbar-collapse ul li:hover .prosection ul{
-           display: block;
-           position: absolute;
-          
-        }
-        .navbar-collapse ul li:hover .prosection ul li{
-            width: 100px;
-                padding:4px;
-                text-align: center;
-                background: transparent;
-                border-radius:20px;
+
+        .navbar-collapse ul li:hover .prosection ul {
+            display: block;
+            position: absolute;
 
         }
-        .navbar-collapse ul li:hover .prosection ul li:last-child{
-           border-bottom: none;
-                
+
+        .navbar-collapse ul li:hover .prosection ul li {
+            width: 100px;
+            padding: 4px;
+            text-align: center;
+            background: transparent;
+            border-radius: 20px;
+
         }
-        .mainmenu ul li:hover .prosection ul li a:hover{
-             color: turquoise
-               
-        } 
-        .npful li a:hover
-        {
-              color: turquoise;
+        .navbar-collapse ul li:hover .prosection ul li:last-child {
+            border-bottom: none;
+
+        }
+
+        .mainmenu ul li:hover .prosection ul li a:hover {
+            color: turquoise
+        }
+
+        .npful li a:hover {
+            color: turquoise;
+        }
+        .GreyHeader{
+        background-color: transparent;
+        }
+
+        .FireBrickRed {
+        background-color: black;
         }
     </style>
 </head>
+
 <body>
-        <header class="top-navbar">
-                <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
-                   <div class="container">
-                       <!-- <a class="navbar-brand" href=""><img src></a> -->
-                       <img style="width: 190px; height: 35px;"
-                           src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
-                           alt="travelex">
-                       <button class="navbar-toggler" type="button" data-toggle="collapse"
-                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
-                       </button>
-                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                           <ul class="navbar-nav ml-auto">
-                               <li class="nav-item ">
-                                   <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                                    Home </a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>
-                                    About Us</a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link" href="login.html"><i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                                    Login</a>
-                               </li>
-                               <li class="nav-item">
-                                   <a class="nav-link profile" href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i>
-                                    Signup </a> 
-                               </li>
-                           </ul>
-                       </div>
-                   </div>
-               </nav>
-           </header>
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top GreyHeader" id="mynav">
+            <div class="container">
+                <!-- <a class="navbar-brand" href=""><img src></a> -->
+                <img style="width: 190px; height: 35px;"
+                    src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png"
+                    alt="travelex">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                                Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>
+                                About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link profile" href="signup.html"><i class="fa fa-sign-in"
+                                    aria-hidden="true"></i>
+                                Signup </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="imdrender" style="display: none;">
         <img src="https://wallpaperaccess.com/full/355030.jpg" alt="">
         <img src="https://wallpaperplay.com/walls/full/1/1/3/272847.jpg" alt="">
@@ -449,179 +467,184 @@
         </div>
         <br>
     </section>
-    <section class="features">
-        <h1 style="text-align: center; padding-bottom: 30px; font-family: sans-serif;font-weight: 700;">Featured
+    <section class="features animatedParent animateOnce">
+        <h1 class="slower animated rotateIn box" style="text-align: center; padding-bottom: 30px; font-family: sans-serif;font-weight: 700;">Featured
             Destinations</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+        <div class="container ">
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 slow animated fadeInDown box">
                     <div class="feature-box">
                         <div class="feature-img">
                             <img
                                 src="https://static01.nyt.com/images/2017/01/18/world/australia-newsletter/australia-newsletter-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
                         </div>
-                     <a href="login.html" style="text-decoration: none;">   <span class="price">1,00,000 INR</span> &nbsp
-                        <span class="ratings">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                        <a href="login.html" style="text-decoration: none;"> <span class="price">1,00,000 INR</span>
+                            &nbsp
+                            <span class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
 
-                        </span>
-                        <div class="placename">
-                            <h3>Sydney</h3>
-                        </div>
-                        <div class="summary">
-                            <p>
-                                Sydney, capital of New South Wales and one of Australia's largest cities,
-                                is best known for its Sydney Opera House, with a distinctive sail-like design.
+                            </span>
+                            <div class="placename">
+                                <h3>Sydney</h3>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    Sydney, capital of New South Wales and one of Australia's largest cities,
+                                    is best known for its Sydney Opera House, with a distinctive sail-like design.
 
-                            </p>
-                        </div>
-                    </a>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 slow animated fadeInDown box delay-500">
                     <div class="feature-box">
                         <div class="feature-img">
                             <img
                                 src="https://cdn-04.independent.ie/life/travel/article34651285.ece/4f0c0/AUTOCROP/w620/zurich.jpg">
                         </div>
-                        <a href="login.html" style="text-decoration: none;">   <span class="price">1,50,000 INR</span> &nbsp
-                        <span class="ratings">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <a href="login.html" style="text-decoration: none;"> <span class="price">1,50,000 INR</span>
+                            &nbsp
+                            <span class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
 
 
-                        </span>
-                        <div class="placename">
-                            <h3>Zurich</h3>
-                        </div>
-                        <div class="summary">
-                            <p>
-                                The city of Zurich, a global center for banking and finance, lies at the north end
-                                of Lake Zurich in northern Switzerland.
-                                The picturesque lanes of the central Altstadt.
+                            </span>
+                            <div class="placename">
+                                <h3>Zurich</h3>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    The city of Zurich, a global center for banking and finance, lies at the north end
+                                    of Lake Zurich in northern Switzerland.
+                                    The picturesque lanes of the central Altstadt.
 
-                            </p>
-                        </div>
+                                </p>
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 slow animated fadeInDown box delay-1000">
                     <div class="feature-box">
                         <div class="feature-img">
                             <img
                                 src="https://www.gannett-cdn.com/media/2018/12/15/USATODAY/usatsports/MotleyFool-TMOT-657f0436-21e9af86.jpg">
                         </div>
-                        <a href="login.html" style="text-decoration: none;">  <span class="price">2,50,000 INR</span> &nbsp
-                        <span class="ratings">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <div class="placename">
-                            <h3>New York</h3>
-                        </div>
-                        <div class="summary">
-                            <p>
-                                New York City comprises 5 boroughs sitting where the Hudson River
-                                meets the Atlantic Ocean. At its core is Manhattan,
-                                which is the world’s major
-                                financial and cultural centers.
-                            </p>
-                        </div>
-                    </a>
+                        <a href="login.html" style="text-decoration: none;"> <span class="price">2,50,000 INR</span>
+                            &nbsp
+                            <span class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <div class="placename">
+                                <h3>New York</h3>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    New York City comprises 5 boroughs sitting where the Hudson River
+                                    meets the Atlantic Ocean. At its core is Manhattan,
+                                    which is the world’s major
+                                    financial and cultural centers.
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
             </div>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 slow animated fadeInDown box delay-1500">
                     <div class="feature-box">
                         <div class="feature-img">
                             <img
                                 src="https://www.cleartrip.com/collections/wp-content/uploads/2018/04/palolem-beach.jpg">
                         </div>
                         <a href="login.html" style="text-decoration: none;"> <span class="price">8,000 INR</span> &nbsp
-                        <span class="ratings">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
 
 
-                        </span>
-                        <div class="placename">
-                            <h3>Goa</h3>
-                        </div>
-                        <div class="summary">
-                            <p>
-                                Goa is a state in western India with coastlines stretching along the Arabian Sea. Its
-                                long history as a Portuguese colony prior to 1961.Goa is also known for its beaches
+                            </span>
+                            <div class="placename">
+                                <h3>Goa</h3>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    Goa is a state in western India with coastlines stretching along the Arabian Sea.
+                                    Its
+                                    long history as a Portuguese colony prior to 1961.Goa is also known for its beaches
 
 
-                            </p>
-                        </div>
-                    </a>
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 slow animated fadeInDown box delay-2000">
                     <div class="feature-box">
                         <div class="feature-img">
                             <img style="height: 235px;"
                                 src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/10/20/Pictures/himachal-hindustan-umbrella-september-shelter-saturday-september_d4fc0cb2-d456-11e8-841e-211dfd3178e1.jpg">
                         </div>
                         <a href="login.html" style="text-decoration: none;"><span class="price">9,000 INR</span> &nbsp
-                        <span class="ratings">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <div class="placename">
-                            <h3>Shimla</h3>
-                        </div>
-                        <div class="summary">
-                            <p>
-                                Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan
-                                foothills.
-                                Once the summer capital of British India.
-                            </p>
-                        </div>
-                    </a>
+                            <span class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <div class="placename">
+                                <h3>Shimla</h3>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    Shimla is the capital of the northern Indian state of Himachal Pradesh, in the
+                                    Himalayan
+                                    foothills.
+                                    Once the summer capital of British India.
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 slow animated fadeInDown box delay-2500">
                     <div class="feature-box">
                         <div class="feature-img">
                             <img src="https://cdn1.goibibo.com/t_tg_fs/nilgiris-ooty-149342248226-orijgp.jpg"
                                 style="height: 235px;">
                         </div>
-                        <a href="login.html" style="text-decoration: none;">  <span class="price">12,000 INR</span> &nbsp
-                        <span class="ratings">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <div class="placename">
-                            <h3>Ooty</h3>
-                        </div>
-                        <div class="summary">
-                            <p>
-                                Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in
-                                southern India's Tamil Nadu state.
-                                Founded as a British Raj summer resort.
-                        </div>
-                    </a>
+                        <a href="login.html" style="text-decoration: none;"> <span class="price">12,000 INR</span> &nbsp
+                            <span class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <div class="placename">
+                                <h3>Ooty</h3>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    Ooty (short for Udhagamandalam) is a resort town in the Western Ghats mountains, in
+                                    southern India's Tamil Nadu state.
+                                    Founded as a British Raj summer resort.
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -630,12 +653,12 @@
     <section id="banner" class="banner">
         <div class="banner-highlights">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8" style="font-family: sans-serif;font-weight: 800;">
+                <div class="row animatedParent animateOnce">
+                    <div class="col-md-8 slow animated fadeInLeft box" style="font-family: sans-serif;font-weight: 800;">
                         <h2>Book now and get amazing offers</h2>
                         <p>Enjoy your vacations at low cost</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 slow animated fadeInRight box">
                         <button type="button" class="book-btn"><a style="color: white; text-decoration: none;"
                                 href="login.html">Book now</a></button>
                     </div>
@@ -646,8 +669,8 @@
     <section class="users-feedback">
         <h1 style="text-align: center;font-family: sans-serif;font-weight: 700;">Costumers Reviews</h1>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 slower animated fadeInLeft box">
                     <div class="users-review">
                         <p>Definately, a great place to choose your vacation destination, with
                             great offers.
@@ -658,7 +681,7 @@
                     <img
                         src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 slower animated fadeInLeft box delay-500">
                     <div class="users-review">
                         <p>Definately, a great place to choose your vacation destination, with
                             great offers.
@@ -668,7 +691,7 @@
                     </div>
                     <img src="https://i.pinimg.com/originals/62/03/8e/62038ed2eee55edc230ba7604ed24b41.jpg">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 slower animated fadeInLeft box delay-1000">
                     <div class="users-review">
                         <p>Definately, a great place to choose your vacation destination, with
                             great offers.
@@ -682,8 +705,8 @@
             </div>
         </div>
     </section>
-    <section id="aboutus" class="aboutus">
-        <div class="info">
+    <section id="aboutus" class="aboutus animatedParent animateOnce">
+        <div class="info slower animated fadeInLeft box">
             <img style="width: 190px; "
                 src="https://luxurylifestyleawards.com/wp/wp-content/uploads/2019/01/Travelex_Logo_Uniform.png">
             <br>
@@ -703,19 +726,19 @@
                     style="color: white;" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </p>
         </div>
-        <div class="uselik">
+        <div class="uselik slower animated fadeInRight box">
             <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Useful Links</p>
 
             <ul style="list-style: none;">
-                    <li><a  style="text-decoration: none;" href="last.html/#FAQ">FAQ</a></li>
-                
-                    <li><a  style="text-decoration: none;" href="last.html/#TAC">Terms and Condition</a></li>
-                    <li><a style="text-decoration: none;" href="last.html/#PP">Privacy Policy</a></li>
-                    <li><a  style="text-decoration: none;" href="last.html/#TOU">Terms of Use</a></li>
-                    <li><a  style="text-decoration: none;" href="last.html/#RP">Refund Policy</a></li>
+                <li><a style="text-decoration: none;" href="last.html/#FAQ">FAQ</a></li>
+
+                <li><a style="text-decoration: none;" href="last.html/#TAC">Terms and Condition</a></li>
+                <li><a style="text-decoration: none;" href="last.html/#PP">Privacy Policy</a></li>
+                <li><a style="text-decoration: none;" href="last.html/#TOU">Terms of Use</a></li>
+                <li><a style="text-decoration: none;" href="last.html/#RP">Refund Policy</a></li>
             </ul>
         </div>
-        <div class="gtch">
+        <div class="gtch slower animated fadeInDown box">
             <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Get in touch</p>
             <p style="color: grey; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;"><i
                     class="fa fa-mobile" aria-hidden="true"></i>&nbsp +91 9154621138 | 9996543952</p>
@@ -728,8 +751,35 @@
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://the-vr7.github.io/Hello-World/css3-animate-it.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+     $(function() {
+    var header = $(".GreyHeader");
+    $(document).scroll(function() {    
+        var scroll = $(document).scrollTop();
+        console.log(scroll);
+        if (scroll >= 3300)
+        {
+            header.removeClass("FireBrickRed ").addClass('GreyHeader');
+        }
+        else if (scroll >= 2750)
+        {
+            header.removeClass('GreyHeader').addClass("FireBrickRed ");
+        }
+        else if (scroll >= 2100)
+        {
+            header.removeClass("FireBrickRed ").addClass('GreyHeader');
+        }
+        else if (scroll >= 700) {
+            header.removeClass('GreyHeader').addClass("FireBrickRed ");
+        }
+        else {
+            header.removeClass("FireBrickRed ").addClass('GreyHeader');
+        }
+    });
+});</script>
 </body>
 
 </html>
